@@ -1,0 +1,51 @@
+body {
+    background-color: burlywood;
+    padding:0;
+    margin:0
+}
+
+
+.container {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.pc {
+    font-size: 300px;
+    height:0.34em;
+    width:0.62em;
+    border:0.05em solid teal;
+    border-radius: 0.03em;
+    position: relative;
+
+
+}
+
+.pc:before {
+    position: absolute;
+    content:"";
+    height:0.05em;
+    width:0.93em;
+    background-color: teal;
+    bottom:-0.205em;
+    left:-0.15em;
+    border-radius: 0.05em;
+
+
+}
+
+.pc:after {
+    position: absolute;
+    content:"";
+    background-color: teal;
+    height:0.2em;
+    width:0.05em;
+    bottom:-0.4em;
+    left:-0.07em;
+    border-radius: 0 0 0.05em 0.05em;
+    box-shadow: 0.72em 0 0 0 teal,
+                0.36em -0.2em 0 0 teal;
+}
